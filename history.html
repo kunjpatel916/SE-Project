@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donation History — Lifeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donors.html">Find Donors</a>
+      <a href="organ.html">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-outline btn-sm">Log Out</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="dash-shell">
+  <aside class="dash-sidebar">
+    <a href="dashboard.html">🏠 Overview</a>
+    <a href="history.html" class="active">📜 Donation History</a>
+    <a href="donors.html">🔍 Find Donors</a>
+    <a href="request.html">🆘 Blood Requests</a>
+    <a href="organ.html">🫀 Organ Donation</a>
+    <a href="contact.html">⚙️ Account Settings</a>
+  </aside>
+
+  <main class="dash-main">
+    <div class="section-head">
+      <span class="eyebrow">Your record</span>
+      <h2>Donation history</h2>
+      <p>A complete timeline of your past donations and their status.</p>
+    </div>
+
+    <div class="timeline" id="history-list"></div>
+    <div class="pagination" id="history-pagination"></div>
+  </main>
+</div>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

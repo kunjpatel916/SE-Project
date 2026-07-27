@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifeline — Organ & Blood Donation Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="loader-overlay">
+  <svg class="loader-pulse" viewBox="0 0 300 100"><polyline class="pulse-line" points="0,50 60,50 80,20 100,80 120,50 300,50"/></svg>
+  <span class="muted" style="font-family:var(--font-mono);font-size:.75rem;">LOADING LIFELINE…</span>
+</div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="donors.html">Find Donors</a>
+      <a href="organ.html">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Become a Donor</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Every 2 seconds, someone needs blood</span>
+      <h1>Your donation writes<br>someone else's next chapter.</h1>
+      <p class="lede">Lifeline connects blood and organ donors with patients who need them most — through a simple, verified, and always-on registry.</p>
+      <div class="hero-cta">
+        <a href="register.html" class="btn btn-primary">Register as a Donor</a>
+        <a href="request.html" class="btn btn-outline">Request Blood</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num" data-count="18400">0</div><div class="lbl">Registered Donors</div></div>
+        <div><div class="num" data-count="6200">0</div><div class="lbl">Lives Saved</div></div>
+        <div><div class="num" data-count="340">0</div><div class="lbl">Partner Hospitals</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Live Registry Feed</span>
+        <h3 style="color:#fff;font-size:1.3rem;">O+ requested in Ahmedabad</h3>
+        <p style="color:rgba(255,255,255,.75)">Sterling Hospital · Posted 2 hours ago · 2 units needed</p>
+      </div>
+      <div class="hero-monitor">
+        <svg viewBox="0 0 300 60" style="width:100%;height:50px;"><polyline class="pulse-line" style="stroke:var(--gold)" points="0,30 50,30 65,10 80,50 95,30 300,30"/></svg>
+        <div class="reading"><span>HR 72 BPM</span><span>SPO2 98%</span><span>STATUS ACTIVE</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="pulse-divider"><svg viewBox="0 0 1400 46"><polyline class="pulse-line" points="0,23 300,23 340,4 380,42 420,23 1400,23"/></svg></div>
+
+<!-- ABOUT -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why it matters</span>
+      <h2>Two decisions. Countless lives changed.</h2>
+      <p>Blood cannot be manufactured — it can only come from a willing donor. A single organ donor can save up to eight lives and improve dozens more through tissue donation. Lifeline exists to make both decisions easy to act on.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card benefit-card"><div class="icon">🩸</div><h4>Blood Donation</h4><p>A 15-minute donation can supply plasma, platelets, and red cells to up to three different patients.</p></div>
+      <div class="card benefit-card"><div class="icon">🫀</div><h4>Organ Donation</h4><p>Register your intent once — kidneys, liver, heart, lungs, and tissue can go on to help multiple recipients.</p></div>
+      <div class="card benefit-card"><div class="icon">📍</div><h4>Verified Network</h4><p>Every donor and hospital on Lifeline is verified, so requests reach real, available donors nearby.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="grid grid-4">
+      <div><div class="num" data-count="18400">0</div><div class="lbl">Active Donors</div></div>
+      <div><div class="num" data-count="6200">0</div><div class="lbl">Lives Saved</div></div>
+      <div><div class="num" data-count="980">0</div><div class="lbl">Organ Pledges</div></div>
+      <div><div class="num" data-count="340">0</div><div class="lbl">Hospitals Onboard</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What you get</span>
+      <h2>Donating is simple, safe, and tracked.</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><div class="icon" style="font-size:1.5rem">🛡️</div><h4>Safety First</h4><p style="font-size:.88rem">Sterile, single-use equipment for every donor, every time.</p></div>
+      <div class="card"><div class="icon" style="font-size:1.5rem">⏱️</div><h4>Fast Process</h4><p style="font-size:.88rem">Screening to donation typically takes under an hour.</p></div>
+      <div class="card"><div class="icon" style="font-size:1.5rem">🔔</div><h4>Smart Alerts</h4><p style="font-size:.88rem">Get notified only for requests matching your blood type nearby.</p></div>
+      <div class="card"><div class="icon" style="font-size:1.5rem">📊</div><h4>Full History</h4><p style="font-size:.88rem">Track every donation and its impact from your dashboard.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="background:var(--rose-soft)">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From registration to real impact.</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item"><h4>1. Register</h4><p>Create a donor profile with your blood group and, optionally, organ donor preferences.</p></div>
+      <div class="timeline-item"><h4>2. Get Matched</h4><p>Receive alerts when a nearby request matches your profile, or browse requests directly.</p></div>
+      <div class="timeline-item"><h4>3. Donate</h4><p>Visit a partner hospital or blood bank at a convenient time slot.</p></div>
+      <div class="timeline-item"><h4>4. Track Impact</h4><p>See your donation history and the lives you've helped from your dashboard.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED DONORS -->
+<section>
+  <div class="container">
+    <div class="flex-between section-head" style="margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Featured donors</span>
+        <h2 style="margin-bottom:0;">Meet a few of our regulars.</h2>
+      </div>
+      <a href="donors.html" class="btn btn-outline btn-sm">View All Donors</a>
+    </div>
+    <div class="grid grid-3" id="featured-donors"></div>
+  </div>
+</section>
+
+<!-- ORGAN AWARENESS -->
+<section style="background:var(--teal);color:#fff;">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center;">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Organ donation awareness</span>
+        <h2 style="color:#fff;">One pledge can help eight people.</h2>
+        <p style="color:rgba(255,255,255,.78)">Kidneys, liver, heart, lungs, pancreas, intestines, corneas, and skin can all be donated by a single person. Registering your intent takes minutes and can be updated anytime.</p>
+        <a href="organ.html" class="btn btn-ghost">Learn About Organ Donation</a>
+      </div>
+      <div class="grid grid-4" style="gap:14px;">
+        <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#fff;text-align:center;padding:16px;"><div style="font-size:1.4rem">🫘</div><small>Kidney</small></div>
+        <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#fff;text-align:center;padding:16px;"><div style="font-size:1.4rem">🫀</div><small>Liver</small></div>
+        <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#fff;text-align:center;padding:16px;"><div style="font-size:1.4rem">🫁</div><small>Lungs</small></div>
+        <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#fff;text-align:center;padding:16px;"><div style="font-size:1.4rem">👁️</div><small>Corneas</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="container">
+    <div class="section-head center" style="margin-inline:auto;">
+      <span class="eyebrow">Stories</span>
+      <h2>Words from our community.</h2>
+    </div>
+    <div style="position:relative;max-width:720px;margin:0 auto;">
+      <button class="slider-arrow prev">‹</button>
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonial-track"></div>
+      </div>
+      <button class="slider-arrow next">›</button>
+      <div class="slider-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ PREVIEW -->
+<section style="background:var(--rose-soft)">
+  <div class="container" style="max-width:820px;">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions.</h2>
+    </div>
+    <div id="faq-preview"></div>
+    <div class="center" style="margin-top:24px;"><a href="awareness.html#faqs" class="btn btn-outline btn-sm">See all questions</a></div>
+  </div>
+</section>
+
+<footer id="contact-info">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff;margin-bottom:12px;"><span class="dot"></span>Lifeline</a>
+        <p style="color:rgba(255,255,255,.7);font-size:.86rem;max-width:280px;">A donor-first registry connecting blood and organ donors with the patients who need them.</p>
+        <div class="social-icons" style="margin-top:16px;">
+          <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Twitter">x</a><a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><a href="donors.html">Find Donors</a><br><a href="organ.html">Organ Donation</a><br><a href="request.html">Request Blood</a><br><a href="awareness.html">Awareness</a></div>
+      <div><h4>Account</h4><a href="login.html">Log In</a><br><a href="register.html">Register</a><br><a href="dashboard.html">Dashboard</a><br><a href="history.html">Donation History</a></div>
+      <div><h4>Support</h4><a href="contact.html">Contact Us</a><br><a href="awareness.html#faqs">FAQs</a><br><a href="#">Privacy Policy</a><br><a href="#">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Lifeline Donation Portal. Demo project — dummy data only.</span>
+      <span>Made for the community, by the community.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top-btn">↑</button>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/faq.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    animateCounters();
+    const wrap = document.getElementById("featured-donors");
+    if(wrap){
+      wrap.innerHTML = DONORS.slice(0,3).map(d => `
+        <div class="card donor-card">
+          <div class="donor-top">
+            <img class="donor-photo" src="${d.photo}" alt="${d.name}">
+            <div><strong>${d.name}</strong><div class="donor-meta">${d.city} · ${d.donations} donations</div></div>
+            <div class="donor-bg" style="margin-left:auto">${d.bloodGroup}</div>
+          </div>
+          <span class="badge badge-dot ${d.available ? 'badge-available' : 'badge-unavailable'}">${d.available ? 'Available' : 'Unavailable'}</span>
+        </div>
+      `).join("");
+    }
+    const track = document.getElementById("testimonial-track");
+    if(track){
+      track.innerHTML = TESTIMONIALS.map(t => `
+        <div class="testimonial-slide">
+          <div class="card center" style="padding:36px;">
+            <p style="font-family:var(--font-display);font-size:1.15rem;color:var(--ink);font-style:italic;">"${t.quote}"</p>
+            <strong>${t.name}</strong>
+            <div class="muted" style="font-size:.82rem;">${t.role}</div>
+          </div>
+        </div>
+      `).join("");
+      initTestimonialSlider();
+    }
+  });
+</script>
+</body>
+</html>

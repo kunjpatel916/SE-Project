@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Donors — Lifeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donors.html" class="active">Find Donors</a>
+      <a href="organ.html">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Become a Donor</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header style="padding:56px 0 20px;">
+  <div class="container">
+    <span class="eyebrow">Donor directory</span>
+    <h1 style="font-size:clamp(1.9rem,3.5vw,2.6rem);">Find a blood donor near you.</h1>
+    <p class="muted" style="max-width:560px;">Search and filter our verified donor network by blood group, city, and availability.</p>
+  </div>
+</header>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="filter-bar">
+      <input type="text" id="donor-search" placeholder="Search by name or city…">
+      <select id="filter-bloodgroup"><option>All Blood Groups</option></select>
+      <select id="filter-city"><option>All Cities</option></select>
+      <select id="filter-availability">
+        <option value="">Any Availability</option>
+        <option value="available">Available Now</option>
+        <option value="unavailable">Unavailable</option>
+      </select>
+    </div>
+
+    <div class="flex-between" style="margin-bottom:18px;">
+      <span class="muted" id="donor-count" style="font-size:.86rem;"></span>
+    </div>
+
+    <div class="grid grid-3" id="donor-grid"></div>
+    <div class="pagination" id="donor-pagination"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff;margin-bottom:12px;"><span class="dot"></span>Lifeline</a>
+        <p style="color:rgba(255,255,255,.7);font-size:.86rem;max-width:280px;">A donor-first registry connecting blood and organ donors with the patients who need them.</p>
+      </div>
+      <div><h4>Explore</h4><a href="donors.html">Find Donors</a><br><a href="organ.html">Organ Donation</a><br><a href="request.html">Request Blood</a><br><a href="awareness.html">Awareness</a></div>
+      <div><h4>Account</h4><a href="login.html">Log In</a><br><a href="register.html">Register</a><br><a href="dashboard.html">Dashboard</a></div>
+      <div><h4>Support</h4><a href="contact.html">Contact Us</a><br><a href="awareness.html#faqs">FAQs</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Lifeline Donation Portal. Demo project — dummy data only.</span></div>
+  </div>
+</footer>
+
+<button class="scroll-top-btn">↑</button>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

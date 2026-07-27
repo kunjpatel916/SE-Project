@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Lifeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donors.html">Find Donors</a>
+      <a href="organ.html">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-outline btn-sm">Log Out</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="dash-shell">
+  <aside class="dash-sidebar">
+    <a href="dashboard.html" class="active">🏠 Overview</a>
+    <a href="history.html">📜 Donation History</a>
+    <a href="donors.html">🔍 Find Donors</a>
+    <a href="request.html">🆘 Blood Requests</a>
+    <a href="organ.html">🫀 Organ Donation</a>
+    <a href="contact.html">⚙️ Account Settings</a>
+  </aside>
+
+  <main class="dash-main">
+    <div class="dash-welcome">
+      <div>
+        <h2>Welcome back, Ananya 👋</h2>
+        <p>Thank you for being part of the Lifeline donor community.</p>
+      </div>
+      <a href="request.html" class="btn btn-ghost">View Urgent Requests</a>
+    </div>
+
+    <div class="grid grid-4" style="margin-bottom:32px;">
+      <div class="vital-stat"><div class="label">Blood Group</div><div class="value" id="stat-bloodgroup">—</div></div>
+      <div class="vital-stat"><div class="label">Donation Status</div><div class="value" id="stat-status" style="font-size:1.3rem;">—</div></div>
+      <div class="vital-stat"><div class="label">Total Donations</div><div class="value" id="stat-total">—</div></div>
+      <div class="vital-stat"><div class="label">Lives Impacted</div><div class="value" id="stat-lives">—</div></div>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:32px;">
+      <div class="card">
+        <div class="label" style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;color:var(--ink-soft);">Registered Organs</div>
+        <div style="font-family:var(--font-display);font-size:1.4rem;color:var(--teal);margin-top:6px;" id="stat-organ">—</div>
+      </div>
+      <div class="card">
+        <div class="label" style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;color:var(--ink-soft);">Next Eligible Donation</div>
+        <div style="font-family:var(--font-display);font-size:1.4rem;color:var(--teal);margin-top:6px;" id="stat-eligible">—</div>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:16px;">Quick actions</h3>
+    <div class="quick-actions" style="margin-bottom:36px;">
+      <div class="qa-card" data-goto="request.html"><div class="icon">🆘</div><strong>Request Blood</strong></div>
+      <div class="qa-card" data-goto="donors.html"><div class="icon">🔍</div><strong>Find a Donor</strong></div>
+      <div class="qa-card" data-goto="organ.html"><div class="icon">🫀</div><strong>Update Organ Pledge</strong></div>
+      <div class="qa-card" data-goto="history.html"><div class="icon">📜</div><strong>View History</strong></div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h4>Upcoming requests near you</h4>
+        <div id="dash-requests"></div>
+      </div>
+      <div class="card">
+        <h4>Notifications</h4>
+        <div id="dash-notifications"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+      <h4>Recent activity</h4>
+      <div id="dash-activity"></div>
+    </div>
+  </main>
+</div>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

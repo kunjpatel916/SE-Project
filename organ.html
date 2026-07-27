@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organ Donation — Lifeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donors.html">Find Donors</a>
+      <a href="organ.html" class="active">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Become a Donor</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:20px;">
+  <div class="container">
+    <span class="eyebrow">Organ donation overview</span>
+    <h1 style="max-width:680px;">One decision. Up to eight lives changed.</h1>
+    <p class="lede">Organ and tissue donation is one of the most powerful gifts a person can give. Registering your intent takes minutes and can be updated at any time.</p>
+    <a href="register.html" class="btn btn-primary">Register as Organ Donor</a>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What can be donated</span>
+      <h2>Organs & tissues in demand.</h2>
+    </div>
+    <div class="grid grid-4" id="organ-grid"></div>
+  </div>
+</section>
+
+<section style="background:var(--rose-soft)">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center;">
+      <div>
+        <span class="eyebrow">Eligibility</span>
+        <h2>Who can register as an organ donor?</h2>
+        <ul class="stack-sm muted" style="padding-left:18px;">
+          <li>Almost anyone, regardless of age, can register their intent to donate.</li>
+          <li>Medical suitability is assessed at the time of donation, not at registration.</li>
+          <li>Certain active infections or cancers may affect eligibility for specific organs.</li>
+          <li>You can register as both a blood and organ donor from a single account.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Why register now?</h4>
+        <div class="stack-sm">
+          <div class="flex-between"><span class="muted">Avg. wait time for a kidney</span><strong>3–5 yrs</strong></div>
+          <div class="flex-between"><span class="muted">Patients on the waiting list</span><strong>100,000+</strong></div>
+          <div class="flex-between"><span class="muted">Lives saved per donor</span><strong>Up to 8</strong></div>
+          <div class="flex-between"><span class="muted">Lives improved via tissue</span><strong>Up to 75</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Benefits</span>
+      <h2>Why organ donation matters.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><h4>🌱 A legacy of life</h4><p>Your decision can continue to help others long after you're gone.</p></div>
+      <div class="card"><h4>👨‍👩‍👧 Support for families</h4><p>Many families of donors find comfort knowing their loved one helped save lives.</p></div>
+      <div class="card"><h4>🔁 Reversible anytime</h4><p>You can update or withdraw your donor status at any point from your dashboard.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--teal);color:#fff;">
+  <div class="container center">
+    <span class="eyebrow" style="color:var(--gold)">Awareness</span>
+    <h2 style="color:#fff;max-width:640px;margin-inline:auto;">Talk to your family about your decision.</h2>
+    <p style="color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;">Letting your loved ones know your wishes in advance makes it easier for them to honor your decision when it matters most.</p>
+    <a href="register.html" class="btn btn-ghost">Register as Organ Donor</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff;margin-bottom:12px;"><span class="dot"></span>Lifeline</a>
+        <p style="color:rgba(255,255,255,.7);font-size:.86rem;max-width:280px;">A donor-first registry connecting blood and organ donors with the patients who need them.</p>
+      </div>
+      <div><h4>Explore</h4><a href="donors.html">Find Donors</a><br><a href="organ.html">Organ Donation</a><br><a href="request.html">Request Blood</a><br><a href="awareness.html">Awareness</a></div>
+      <div><h4>Account</h4><a href="login.html">Log In</a><br><a href="register.html">Register</a><br><a href="dashboard.html">Dashboard</a></div>
+      <div><h4>Support</h4><a href="contact.html">Contact Us</a><br><a href="awareness.html#faqs">FAQs</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Lifeline Donation Portal. Demo project — dummy data only.</span></div>
+  </div>
+</footer>
+
+<button class="scroll-top-btn">↑</button>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.getElementById("organ-grid");
+    if(grid && typeof ORGANS !== "undefined"){
+      grid.innerHTML = ORGANS.map(o => `
+        <div class="card organ-card">
+          <div class="organ-icon">${o.icon}</div>
+          <h4>${o.name}</h4>
+          <p style="font-size:.85rem;">${o.note}</p>
+        </div>
+      `).join("");
+    }
+  });
+</script>
+</body>
+</html>

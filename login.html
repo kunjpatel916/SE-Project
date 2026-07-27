@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In — Lifeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Lifeline</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donors.html">Find Donors</a>
+      <a href="organ.html">Organ Donation</a>
+      <a href="request.html">Request Blood</a>
+      <a href="awareness.html">Awareness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="register.html" class="btn btn-primary btn-sm">Become a Donor</a>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="auth-shell">
+  <div class="auth-visual">
+    <div>
+      <span class="eyebrow" style="color:var(--gold)">Welcome back</span>
+      <h2>Your next donation could be someone's turning point.</h2>
+      <p>Log in to view your dashboard, track your donation history, and see requests near you.</p>
+    </div>
+    <p class="auth-quote">"The blood you donate gives someone another chance at life." — World Health Organization</p>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <h1>Log in to Lifeline</h1>
+      <p class="muted">Enter your details to access your account.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="login-email">Email address</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+          <div class="error-msg"></div>
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" required>
+          <div class="error-msg"></div>
+        </div>
+        <div class="flex-between" style="margin-bottom:22px;">
+          <label class="checkbox-row"><input type="checkbox" id="login-remember"> Remember me</label>
+          <a href="#" style="font-size:.85rem;color:var(--crimson);font-weight:600;" onclick="openModal('forgot-modal');return false;">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+      </form>
+
+      <div class="auth-switch">Don't have an account? <a href="register.html">Register here</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="forgot-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('forgot-modal')">×</button>
+    <h3>Reset your password</h3>
+    <p class="muted">Enter your email and we'll send a dummy reset link (demo only, no email is actually sent).</p>
+    <div class="field"><input type="email" placeholder="you@example.com"></div>
+    <button class="btn btn-primary btn-block" onclick="closeModal('forgot-modal'); showToast('If an account exists, a reset link has been sent.');">Send Reset Link</button>
+  </div>
+</div>
+
+<script src="data/dummy-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

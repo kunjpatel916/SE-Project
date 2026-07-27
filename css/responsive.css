@@ -1,0 +1,38 @@
+.hero{
+  padding:90px 0 60px;position:relative;overflow:hidden;
+}
+.hero-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;}
+.hero h1{font-size:clamp(2.3rem,4.5vw,3.6rem);line-height:1.05;}
+.hero .lede{font-size:1.05rem;max-width:480px;}
+.hero-cta{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:34px;margin-top:44px;flex-wrap:wrap;}
+.hero-stats .num{font-family:var(--font-display);font-size:1.9rem;color:var(--crimson);}
+.hero-stats .lbl{font-size:.74rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
+.hero-visual{
+  position:relative;background:var(--teal);border-radius:var(--radius-l);
+  padding:36px;color:#fff;min-height:380px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.hero-monitor{background:rgba(0,0,0,.18);border-radius:var(--radius-m);padding:16px;}
+.hero-monitor .reading{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:.8rem;margin-top:10px;color:var(--gold);}
+
+.stats-strip{background:var(--teal);color:#fff;}
+.stats-strip .grid-4{text-align:center;}
+.stats-strip .num{font-family:var(--font-display);font-size:2.4rem;color:#fff;}
+.stats-strip .lbl{color:rgba(255,255,255,.7);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;}
+
+.benefit-card .icon{font-size:1.7rem;margin-bottom:12px;}
+
+footer{background:var(--teal);color:rgba(255,255,255,.8);padding:60px 0 26px;}
+footer h4{color:#fff;font-size:.95rem;}
+footer a{color:rgba(255,255,255,.7);font-size:.86rem;line-height:2.1;}
+footer a:hover{color:#fff;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:40px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .auth-shell{grid-template-columns:1fr;}
+  .auth-visual{display:none;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .myth-row{grid-template-columns:1fr;}
+}
